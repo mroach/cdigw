@@ -10,6 +10,10 @@ defmodule CdigwWeb.Endpoint do
     CdigwWeb.CddbPlug.call(conn, %{})
   end
 
+  match "/mscd/" do
+    CdigwWeb.MscdPlug.call(conn, %{})
+  end
+
   match "/" do
     conn
     |> put_resp_content_type("text/html")
