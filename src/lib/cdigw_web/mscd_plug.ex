@@ -2,7 +2,6 @@ defmodule CdigwWeb.MscdPlug do
   import Plug.Conn
   require Logger
 
-
   def init(options), do: options
 
   def call(conn, _opts) do

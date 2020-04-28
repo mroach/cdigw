@@ -22,6 +22,7 @@ defmodule Mscd.Response do
       Title: title,
       Artist: artist
     ]
+
     track_titles =
       tracks
       |> Enum.with_index(1)
