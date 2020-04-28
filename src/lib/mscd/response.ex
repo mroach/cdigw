@@ -1,4 +1,8 @@
 defmodule Mscd.Response do
+  @moduledoc """
+  Generate responses for MSCD
+  """
+
   alias Cddb.Disc
 
   @certificate "41d602112509916cb8f45f81164805e29bfef1946c88dc57"

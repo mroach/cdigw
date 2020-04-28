@@ -1,4 +1,10 @@
 defmodule Mscd.RequestParser do
+  @moduledoc """
+  Parse MSCD requests.
+
+  MSCD only has one known request type: get disc info given the TOC
+  """
+
   @doc """
       iex> Mscd.RequestParser.parse_query("D 96 3B87 73B9 B2C3 EFEC 12856 165FA 1A976 1E332 22277 257F5 29517 2E04F 32110")
       {:ok, %{

@@ -1,4 +1,8 @@
 defmodule CdigwWeb.MscdPlug do
+  @moduledoc """
+  Handle request for MSCD: the Windows 2000 CD Player
+  """
+
   import Plug.Conn
   require Logger
 
