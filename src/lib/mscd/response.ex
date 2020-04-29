@@ -19,7 +19,7 @@ defmodule Mscd.Response do
     Enum.join(body, @line_separator)
   end
 
-  def render_fields(%Disc{title: title, artist: artist, tracks: tracks} = disc) do
+  def render_fields(%Disc{title: title, artist: artist, tracks: tracks}) do
     parts = [
       CERTIFICATE: @certificate,
       Mode: 0,
